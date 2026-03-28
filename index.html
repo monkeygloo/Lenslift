@@ -15,8 +15,6 @@
                               radial-gradient(at 100% 0%, hsla(217,100%,13%,1) 0, transparent 50%);
         }
         .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
-        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -25,12 +23,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex items-center gap-3">
-                    <img src="lenslift.png" alt="LensLift" class="h-12 w-auto rounded-lg shadow-sm" onerror="this.style.display='none'">
+                    <img src="lenslift.png" alt="LensLift" class="h-12 w-auto rounded-lg">
                     <span class="font-extrabold text-2xl tracking-tighter text-blue-900 uppercase">LensLift</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#pricing" class="font-bold text-slate-600 hover:text-blue-600 transition">Pricing</a>
-                    <a href="tel:9177578262" class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-600/20">
+                    <a href="tel:9177578262" class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition shadow-lg">
                         📞 917-757-8262
                     </a>
                 </div>
@@ -44,7 +42,7 @@
                 Restore Your <span class="text-blue-500">Visibility.</span>
             </h1>
             <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-                Mobile headlight restoration in NYC. Professional 5-stage sanding and ceramic coating. We come to you.
+                Mobile headlight restoration in NYC. Professional-grade results. We come to you.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#book" class="bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-500 hover:text-white transition">Book a Slot</a>
@@ -56,35 +54,21 @@
     <section id="pricing" class="py-24 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-extrabold mb-4">Pricing & Packages</h2>
-                <p class="text-slate-500 uppercase tracking-widest font-bold text-sm">Clear Prices. Professional Results.</p>
-                <p class="mt-4 text-slate-400 italic text-sm">Note: Pricing may vary slightly based on your specific location.</p>
+                <h2 class="text-4xl font-extrabold mb-4 text-slate-900 uppercase tracking-tighter">Pricing Range</h2>
+                <p class="text-slate-500 font-medium italic">"About an hour to do both headlights"</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="p-10 rounded-[2.5rem] bg-slate-50 border border-slate-200 card-hover">
-                    <h3 class="text-2xl font-bold mb-2">Standard Restore</h3>
-                    <p class="text-slate-500 mb-6">Most cars (both headlights)</p>
-                    <div class="text-4xl font-extrabold mb-8">$40 <span class="text-sm text-slate-400 font-normal">/ pair</span></div>
-                    <ul class="space-y-4 mb-10 text-slate-600">
-                        <li>✅ Complete Oxidation Removal</li>
-                        <li>✅ Multi-Stage Machine Sanding</li>
-                        <li>✅ High-Gloss Protective Sealant</li>
-                        <li>⏱️ ~1 Hour Service Time</li>
-                    </ul>
-                    <a href="#book" class="block text-center py-4 rounded-xl border-2 border-slate-900 font-bold hover:bg-slate-900 hover:text-white transition">Book Standard</a>
+                <div class="p-10 rounded-[2.5rem] bg-slate-50 border border-slate-200">
+                    <h3 class="text-2xl font-bold mb-4">Standard</h3>
+                    <div class="text-5xl font-extrabold mb-6">$40 <span class="text-sm text-slate-400 font-normal">/ pair</span></div>
+                    <p class="text-slate-600 font-bold mb-2">Service Includes:</p>
+                    <p class="text-slate-500 mb-8">Most cars (both headlights) restored to clarity in under one hour.</p>
                 </div>
-                <div class="p-10 rounded-[2.5rem] bg-slate-900 text-white card-hover relative overflow-hidden border-4 border-blue-600">
-                    <div class="absolute top-5 right-5 bg-blue-600 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Heavier Oxidation</div>
-                    <h3 class="text-2xl font-bold mb-2">Deep Restoration</h3>
-                    <p class="text-slate-400 mb-6">For severely yellowed or pitted lenses</p>
-                    <div class="text-4xl font-extrabold mb-8">$50 – $80 <span class="text-sm text-slate-500 font-normal">/ pair</span></div>
-                    <ul class="space-y-4 mb-10 text-slate-300">
-                        <li>✅ Advanced 5-Stage Restoration</li>
-                        <li>✅ Optical Grade Compounding</li>
-                        <li>✅ Industrial UV Ceramic Protection</li>
-                        <li>⏱️ ~1 Hour Service Time</li>
-                    </ul>
-                    <a href="#book" class="block text-center py-4 rounded-xl bg-blue-600 font-bold hover:bg-blue-500 transition shadow-xl shadow-blue-600/30">Select Deep Restore</a>
+                <div class="p-10 rounded-[2.5rem] bg-slate-900 text-white">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Heavier Oxidation</h3>
+                    <div class="text-5xl font-extrabold mb-6">$50 – $80 <span class="text-sm text-slate-500 font-normal">/ pair</span></div>
+                    <p class="text-slate-300 font-bold mb-2">Specialized Care:</p>
+                    <p class="text-slate-400 mb-8">Deep restoration for severely weathered lenses. Prices vary based on location.</p>
                 </div>
             </div>
         </div>
@@ -92,50 +76,35 @@
 
     <section id="book" class="py-24 px-4 bg-slate-100">
         <div class="max-w-4xl mx-auto bg-white rounded-[3rem] p-10 md:p-16 shadow-2xl">
-            <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
-                <div class="text-center md:text-left">
-                    <h2 class="text-4xl font-extrabold mb-2 text-slate-900">Book Your Lift</h2>
-                    <p class="text-slate-500">Most jobs completed in under 1 hour.</p>
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6 text-center md:text-left">
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-2 text-slate-900 uppercase">Book Your Service</h2>
+                    <p class="text-slate-500">Fast mobile restoration at your location.</p>
                 </div>
-                <a href="tel:9177578262" class="flex items-center gap-3 bg-green-50 text-green-700 px-6 py-4 rounded-2xl font-bold border border-green-200 hover:bg-green-100 transition text-lg">
-                    <span>📱</span> Call/Text 917-757-8262
+                <a href="tel:9177578262" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-blue-700 transition text-lg">
+                    📱 917-757-8262
                 </a>
             </div>
             
             <form action="https://formspree.io/f/xjgpglvb" method="POST" class="space-y-6">
                 <div class="grid md:grid-cols-2 gap-6">
-                    <div class="space-y-2">
-                        <label for="name" class="font-bold text-sm ml-2">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Name" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none transition">
-                    </div>
-                    <div class="space-y-2">
-                        <label for="phone" class="font-bold text-sm ml-2">Your Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="917-000-0000" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none transition">
-                    </div>
+                    <input type="text" name="name" placeholder="Name" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none transition font-bold">
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none transition font-bold">
                 </div>
-                <div class="space-y-2">
-                    <label for="vehicle" class="font-bold text-sm ml-2">Vehicle (Year/Make/Model)</label>
-                    <input type="text" id="vehicle" name="vehicle" placeholder="e.g., 2018 Honda Civic" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none transition">
-                </div>
-                <div class="space-y-2">
-                    <label for="message" class="font-bold text-sm ml-2">Your Location or Preferred Time</label>
-                    <textarea id="message" name="message" rows="3" placeholder="I'm located in Queens..." class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none transition"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-slate-900 text-white font-extrabold py-5 rounded-2xl text-xl hover:bg-blue-600 transition shadow-2xl">Send Booking Request</button>
+                <input type="text" name="vehicle" placeholder="Vehicle Year, Make, & Model" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none transition font-bold">
+                <textarea name="message" placeholder="Your Location or Preferred Time..." rows="3" class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none transition font-bold"></textarea>
+                <button type="submit" class="w-full bg-slate-900 text-white font-extrabold py-5 rounded-2xl text-xl hover:bg-blue-600 transition">Submit Request</button>
             </form>
         </div>
     </section>
 
     <footer class="bg-slate-900 text-slate-500 py-20 text-center px-4">
-        <img src="lenslift.png" alt="LensLift" class="h-16 w-auto mx-auto mb-6 rounded-xl" onerror="this.style.display='none'">
-        <p class="text-white font-extrabold text-2xl tracking-tighter mb-2">LENSLIFT MOBILE</p>
-        <p class="mb-10 text-slate-400 font-medium italic text-sm">"About an hour to do both headlights."</p>
+        <img src="lenslift.png" alt="LensLift" class="h-16 w-auto mx-auto mb-6 rounded-xl">
+        <p class="text-white font-extrabold text-2xl tracking-tighter mb-2 uppercase">LensLift Mobile</p>
+        <p class="mb-10 text-slate-400">Professional Headlight Restoration NYC</p>
         <div class="flex justify-center gap-8 text-white font-bold text-sm uppercase tracking-widest">
-            <a href="tel:9177578262" class="hover:text-blue-400 transition">917-757-8262</a>
-            <a href="#book" class="hover:text-blue-400 transition">Booking</a>
-        </div>
-        <div class="mt-12 pt-8 border-t border-slate-800 text-xs text-slate-600">
-            &copy; 2026 LensLift NYC. All Rights Reserved.
+            <a href="tel:9177578262" class="hover:text-blue-400">917-757-8262</a>
+            <a href="#pricing" class="hover:text-blue-400">Pricing</a>
         </div>
     </footer>
 
