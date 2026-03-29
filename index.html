@@ -9,7 +9,6 @@
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         
-        /* Hero Branding Section */
         .hero-mesh {
             background-color: #0f172a;
             background-image: radial-gradient(at 0% 0%, hsla(217,100%,13%,1) 0, transparent 50%), 
@@ -18,7 +17,7 @@
         
         .header-white { background-color: #ffffff; border-bottom: 1px solid #e2e8f0; }
 
-        /* Heartbeat Animation */
+        /* Heartbeat Animation (Now Hero Only) */
         @keyframes heartbeat {
             0% { transform: scale(1); }
             14% { transform: scale(1.05); }
@@ -40,6 +39,13 @@
             border-radius: 9999px;
             transition: width 1s ease-in-out;
         }
+
+        /* Gold Pop Badge */
+        .gold-pop {
+            background: #fbbf24; /* High-visibility Gold */
+            color: #0f172a;
+            box-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -50,7 +56,7 @@
                 
                 <div class="flex items-center gap-4 mb-4">
                     <span class="font-extrabold text-6xl tracking-tighter text-[#3b82f6] uppercase">LensLift</span>
-                    <div class="bg-blue-600 text-white px-3 py-1 rounded-md font-black text-[10px] uppercase tracking-tighter shadow-sm mt-2">
+                    <div class="gold-pop px-3 py-1 rounded-md font-black text-[10px] uppercase tracking-tighter shadow-sm mt-2">
                         Introductory Rate
                     </div>
                 </div>
@@ -63,7 +69,7 @@
                         <a href="#faq" class="font-bold text-xs text-slate-600 hover:text-[#3b82f6] transition uppercase tracking-widest">FAQ</a>
                     </div>
                     <div class="flex justify-end">
-                        <a href="#book" class="pulse-button bg-slate-900 text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-[#3b82f6] transition shadow-lg uppercase tracking-widest">Book Now</a>
+                        <a href="#book" class="bg-slate-900 text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-[#3b82f6] transition shadow-lg uppercase tracking-widest">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -176,13 +182,13 @@
 
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div class="p-10 rounded-[2.5rem] bg-slate-50 border-2 border-slate-100 text-left relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-[#3b82f6] text-white font-bold text-[10px] px-4 py-1 uppercase tracking-tighter">Founder's Rate</div>
+                    <div class="absolute top-0 right-0 gold-pop font-bold text-[10px] px-4 py-1 uppercase tracking-tighter">Founder's Rate</div>
                     <h3 class="text-2xl font-bold mb-4 text-slate-900">Standard Restore</h3>
                     <div class="text-5xl font-extrabold mb-6 text-[#3b82f6]">$40 <span class="text-sm text-slate-400 font-normal">/ pair</span></div>
                     <p class="text-slate-600 font-medium leading-relaxed">Full restoration of both headlights with ceramic coating. Perfect for standard yellowing.</p>
                 </div>
                 <div class="p-10 rounded-[2.5rem] bg-slate-900 text-white text-left relative overflow-hidden border-2 border-[#3b82f6]">
-                    <div class="absolute top-0 right-0 bg-[#3b82f6] text-white font-bold text-[10px] px-4 py-1 uppercase tracking-tighter">Founder's Rate</div>
+                    <div class="absolute top-0 right-0 gold-pop font-bold text-[10px] px-4 py-1 uppercase tracking-tighter">Founder's Rate</div>
                     <h3 class="text-2xl font-bold mb-4 text-[#3b82f6]">Deep Restoration</h3>
                     <div class="text-5xl font-extrabold mb-6 text-[#3b82f6]">$50 – $80 <span class="text-sm text-slate-500 font-normal">/ pair</span></div>
                     <p class="text-slate-400 font-medium leading-relaxed">Heavy oxidation removal requiring extra sanding stages. Restores severely crusty lenses.</p>
@@ -196,19 +202,19 @@
         </div>
     </section>
 
-    <section id="faq" class="py-24 px-4 bg-white">
+    <section id="faq" class="py-24 px-4 bg-white text-left">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-4xl font-extrabold text-center mb-16 uppercase tracking-tighter text-slate-900">Frequently Asked Questions</h2>
             <div class="space-y-8">
-                <div class="border-b border-slate-100 pb-8 text-left">
+                <div class="border-b border-slate-100 pb-8">
                     <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">How long does it take?</h3>
                     <p class="text-slate-500 font-medium leading-relaxed">A full restoration typically takes between <span class="text-slate-900 font-bold">45 to 90 minutes</span> depending on oxidation levels.</p>
                 </div>
-                <div class="border-b border-slate-100 pb-8 text-left">
+                <div class="border-b border-slate-100 pb-8">
                     <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">Do you come to me?</h3>
                     <p class="text-slate-500 font-medium leading-relaxed">Yes! Mobile service currently serving <span class="text-[#3b82f6] font-bold">Brooklyn, Queens, and Manhattan</span>. We bring all equipment to you.</p>
                 </div>
-                <div class="border-b border-slate-100 pb-8 text-left">
+                <div class="border-b border-slate-100 pb-8">
                     <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">What payment do you accept?</h3>
                     <p class="text-slate-500 font-medium leading-relaxed uppercase tracking-widest">We strictly accept <span class="text-slate-900 font-bold">Cash, Zelle, or Venmo</span> upon completion of the work.</p>
                 </div>
