@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LensLift | Professional Headlight Restoration NYC</title>
+    <title>LensLift | NYC Professional Headlight Restoration</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        
+        /* Hero Branding Section */
         .hero-mesh {
             background-color: #0f172a;
             background-image: radial-gradient(at 0% 0%, hsla(217,100%,13%,1) 0, transparent 50%), 
                               radial-gradient(at 100% 0%, hsla(217,100%,13%,1) 0, transparent 50%);
         }
+        
         .header-white { background-color: #ffffff; border-bottom: 1px solid #e2e8f0; }
 
+        /* Heartbeat Animation */
         @keyframes heartbeat {
             0% { transform: scale(1); }
             14% { transform: scale(1.05); }
@@ -22,9 +26,19 @@
             42% { transform: scale(1.05); }
             70% { transform: scale(1); }
         }
+
         .pulse-button {
             animation: heartbeat 1.5s ease-in-out infinite;
             display: inline-block;
+        }
+
+        /* Progress Bar Animation */
+        .progress-fill {
+            width: 60%; /* Manual control for the Architect to update as jobs are finished */
+            background: #3b82f6;
+            height: 100%;
+            border-radius: 9999px;
+            transition: width 1s ease-in-out;
         }
     </style>
 </head>
@@ -33,18 +47,17 @@
     <nav class="fixed w-full z-50 header-white py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col items-center">
-                
-                <span class="font-extrabold text-6xl tracking-tighter text-blue-500 uppercase mb-4">LensLift</span>
+                <span class="font-extrabold text-6xl tracking-tighter text-[#3b82f6] uppercase mb-4">LensLift</span>
                 
                 <div class="grid grid-cols-3 w-full items-center">
                     <div></div> <div class="flex justify-center space-x-8">
-                        <a href="#method" class="font-bold text-xs text-slate-600 hover:text-blue-500 transition uppercase tracking-widest">Method</a>
-                        <a href="#gallery" class="font-bold text-xs text-slate-600 hover:text-blue-500 transition uppercase tracking-widest">Gallery</a>
-                        <a href="#pricing" class="font-bold text-xs text-slate-600 hover:text-blue-500 transition uppercase tracking-widest">Pricing</a>
-                        <a href="#faq" class="font-bold text-xs text-slate-600 hover:text-blue-500 transition uppercase tracking-widest">FAQ</a>
+                        <a href="#method" class="font-bold text-xs text-slate-600 hover:text-[#3b82f6] transition uppercase tracking-widest">Method</a>
+                        <a href="#gallery" class="font-bold text-xs text-slate-600 hover:text-[#3b82f6] transition uppercase tracking-widest">Gallery</a>
+                        <a href="#pricing" class="font-bold text-xs text-slate-600 hover:text-[#3b82f6] transition uppercase tracking-widest">Pricing</a>
+                        <a href="#faq" class="font-bold text-xs text-slate-600 hover:text-[#3b82f6] transition uppercase tracking-widest">FAQ</a>
                     </div>
                     <div class="flex justify-end">
-                        <a href="#book" class="pulse-button bg-slate-900 text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-blue-500 transition shadow-lg uppercase tracking-widest">Book Now</a>
+                        <a href="#book" class="pulse-button bg-slate-900 text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-[#3b82f6] transition shadow-lg uppercase tracking-widest">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -57,34 +70,34 @@
                 🌎 Se Habla Español
             </div>
             <h1 class="text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter leading-none uppercase">
-                See Clearly. <br> <span class="text-blue-500">Drive Safely.</span>
+                See Clearly. <br> <span class="text-[#3b82f6]">Drive Safely.</span>
             </h1>
             <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
                 Professional mobile headlight restoration in Brooklyn, Queens, & Manhattan. Industrial-grade clarity. We come to you.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#book" class="pulse-button bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-500 hover:text-white transition shadow-2xl">Book Appointment</a>
+                <a href="#book" class="pulse-button bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-[#3b82f6] hover:text-white transition shadow-2xl">Book Appointment</a>
                 <a href="tel:9177578262" class="border border-slate-700 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-800 transition">Call 917-757-8262</a>
             </div>
         </div>
     </section>
 
     <section id="method" class="py-24 px-4 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl font-extrabold text-center mb-16 uppercase tracking-tighter text-slate-900">The LensLift Method</h2>
-            <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-16 uppercase tracking-tighter text-slate-900">The LensLift Method</h2>
+            <div class="grid md:grid-cols-3 gap-8">
                 <div class="p-10 rounded-[2.5rem] border border-gray-100 bg-gray-50">
-                    <div class="text-5xl mb-6 text-blue-500">🌀</div>
+                    <div class="text-5xl mb-6 text-[#3b82f6]">🌀</div>
                     <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">1. Precision Surface Prep</h3>
                     <p class="text-gray-600">Multi-stage machine wet sanding to surgically remove the oxidized, yellow layer and reveal fresh plastic.</p>
                 </div>
                 <div class="p-10 rounded-[2.5rem] border border-gray-100 bg-gray-50">
-                    <div class="text-5xl mb-6 text-blue-500">✨</div>
+                    <div class="text-5xl mb-6 text-[#3b82f6]">✨</div>
                     <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">2. Clarity Restoration</h3>
                     <p class="text-gray-600">Advanced refining and polishing to restore full transparency and optical performance to your lenses.</p>
                 </div>
                 <div class="p-10 rounded-[2.5rem] border border-gray-100 bg-gray-50">
-                    <div class="text-5xl mb-6 text-blue-500">🛡️</div>
+                    <div class="text-5xl mb-6 text-[#3b82f6]">🛡️</div>
                     <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">3. Industrial Ceramic Armor</h3>
                     <p class="text-gray-600">Application of a professional UV ceramic coating to lock in the clarity and protect against future weathering.</p>
                 </div>
@@ -95,26 +108,26 @@
     <section class="py-24 px-4 bg-slate-900 text-white overflow-hidden relative">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-4xl font-extrabold text-center mb-16 uppercase tracking-tighter">Why Restore Instead of Replace?</h2>
-            <div class="grid md:grid-cols-3 gap-12 text-left">
+            <div class="grid md:grid-cols-3 gap-12">
                 <div class="flex gap-6 items-start">
-                    <div class="bg-blue-500 text-white p-4 rounded-2xl text-2xl font-bold">01</div>
+                    <div class="bg-[#3b82f6] text-white p-4 rounded-2xl text-2xl font-bold">01</div>
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400 uppercase">Night Visibility</h3>
-                        <p class="text-slate-400 leading-relaxed">Oxidized lenses block up to 70% of light output. Our process increases visibility by up to <span class="text-white font-bold">200%</span>, making night driving significantly safer.</p>
+                        <p class="text-slate-400 leading-relaxed">Oxidized lenses block light output. Our process increases visibility by up to <span class="text-white font-bold">200%</span>, making night driving significantly safer.</p>
                     </div>
                 </div>
                 <div class="flex gap-6 items-start">
-                    <div class="bg-blue-500 text-white p-4 rounded-2xl text-2xl font-bold">02</div>
+                    <div class="bg-[#3b82f6] text-white p-4 rounded-2xl text-2xl font-bold">02</div>
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400 uppercase">Resale Value</h3>
-                        <p class="text-slate-400 leading-relaxed">Cloudy headlights make a car look aged. Clear lenses can add <span class="text-white font-bold">hundreds of dollars</span> to your vehicle's private party resale value.</p>
+                        <p class="text-slate-400 leading-relaxed">Cloudy headlights age your car instantly. Clear lenses can add <span class="text-white font-bold">hundreds of dollars</span> to your private party resale value.</p>
                     </div>
                 </div>
                 <div class="flex gap-6 items-start">
-                    <div class="bg-blue-500 text-white p-4 rounded-2xl text-2xl font-bold">03</div>
+                    <div class="bg-[#3b82f6] text-white p-4 rounded-2xl text-2xl font-bold">03</div>
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400 uppercase">Massive Savings</h3>
-                        <p class="text-slate-400 leading-relaxed">New headlight assemblies can cost <span class="text-white font-bold">$300–$1,000+</span>. Get the same look and performance for a fraction of the replacement cost.</p>
+                        <p class="text-slate-400 leading-relaxed">New headlight assemblies cost <span class="text-white font-bold">$300–$1,000+</span>. Get the same look and performance for a fraction of the cost.</p>
                     </div>
                 </div>
             </div>
@@ -141,22 +154,38 @@
             <div class="flex justify-center mb-8">
                 <img src="lenslift2 (2).png" alt="LensLift Logo" class="h-32 w-auto">
             </div>
-            <h2 class="text-4xl font-extrabold mb-4 uppercase tracking-tighter text-slate-900">Service Tiers</h2>
-            <div class="inline-flex items-center justify-center gap-3 bg-slate-900 text-white px-6 py-3 rounded-full font-bold mb-8 shadow-lg">
-                <span class="text-blue-500 text-xl">🏆</span>
-                <span>The LensLift 18-Month Guarantee</span>
+            
+            <h2 class="text-4xl font-extrabold mb-4 uppercase tracking-tighter text-slate-900">Launch Pricing</h2>
+            
+            <div class="max-w-md mx-auto mb-12 bg-slate-100 p-8 rounded-3xl border border-slate-200">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-slate-900 font-black uppercase text-xs tracking-widest">Founder's Special Progress</span>
+                    <span class="text-[#3b82f6] font-black">12/20 Spots Claimed</span>
+                </div>
+                <div class="w-full bg-slate-200 h-4 rounded-full overflow-hidden">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="mt-4 text-slate-500 text-[10px] font-bold uppercase tracking-widest">Standard rates return after 20 bookings</p>
             </div>
+
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="p-10 rounded-[2.5rem] bg-slate-50 border border-slate-200 text-left">
+                <div class="p-10 rounded-[2.5rem] bg-slate-50 border-2 border-slate-100 text-left relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-[#3b82f6] text-white font-bold text-[10px] px-4 py-1 uppercase tracking-tighter">Founder's Rate</div>
                     <h3 class="text-2xl font-bold mb-4 text-slate-900">Standard Restore</h3>
-                    <div class="text-5xl font-extrabold mb-6 text-blue-500">$40 <span class="text-sm text-slate-400 font-normal">/ pair</span></div>
-                    <p class="text-slate-600 font-medium">Restoration of standard haze and yellowing for both headlights.</p>
+                    <div class="text-5xl font-extrabold mb-6 text-[#3b82f6]">$40 <span class="text-sm text-slate-400 font-normal">/ pair</span></div>
+                    <p class="text-slate-600 font-medium leading-relaxed">Full restoration of both headlights with ceramic coating. Perfect for standard yellowing.</p>
                 </div>
-                <div class="p-10 rounded-[2.5rem] bg-slate-900 text-white text-left">
-                    <h3 class="text-2xl font-bold mb-4 text-blue-500">Deep Restoration</h3>
-                    <div class="text-5xl font-extrabold mb-6 text-blue-500">$50 – $80 <span class="text-sm text-slate-500 font-normal">/ pair</span></div>
-                    <p class="text-slate-400 font-medium">For heavily weathered lenses requiring extended stage sanding.</p>
+                <div class="p-10 rounded-[2.5rem] bg-slate-900 text-white text-left relative overflow-hidden border-2 border-[#3b82f6]">
+                    <div class="absolute top-0 right-0 bg-[#3b82f6] text-white font-bold text-[10px] px-4 py-1 uppercase tracking-tighter">Founder's Rate</div>
+                    <h3 class="text-2xl font-bold mb-4 text-[#3b82f6]">Deep Restoration</h3>
+                    <div class="text-5xl font-extrabold mb-6 text-[#3b82f6]">$50 – $80 <span class="text-sm text-slate-500 font-normal">/ pair</span></div>
+                    <p class="text-slate-400 font-medium leading-relaxed">Heavy oxidation removal requiring extra sanding stages. Restores severely crusty lenses.</p>
                 </div>
+            </div>
+            
+            <div class="mt-12 inline-flex items-center gap-3 bg-slate-900 text-white px-6 py-3 rounded-full font-bold shadow-lg">
+                <span class="text-[#3b82f6] text-xl">🏆</span>
+                <span>Includes LensLift 18-Month Guarantee</span>
             </div>
         </div>
     </section>
@@ -166,20 +195,16 @@
             <h2 class="text-4xl font-extrabold text-center mb-16 uppercase tracking-tighter text-slate-900">Frequently Asked Questions</h2>
             <div class="space-y-8">
                 <div class="border-b border-slate-100 pb-8">
-                    <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">How long does the service take?</h3>
-                    <p class="text-slate-500 font-medium leading-relaxed">A full restoration typically takes between <span class="text-slate-900 font-bold">45 to 90 minutes</span> depending on the level of oxidation.</p>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">How long does it take?</h3>
+                    <p class="text-slate-500 font-medium leading-relaxed">A full restoration typically takes between <span class="text-slate-900 font-bold">45 to 90 minutes</span> depending on oxidation levels.</p>
                 </div>
                 <div class="border-b border-slate-100 pb-8">
-                    <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">Do you come to my location?</h3>
-                    <p class="text-slate-500 font-medium leading-relaxed">Yes! We are a mobile service currently serving <span class="text-blue-500 font-bold text-lg">Brooklyn, Queens, and Manhattan</span>. We bring all equipment to your location.</p>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">Do you come to me?</h3>
+                    <p class="text-slate-500 font-medium leading-relaxed">Yes! Mobile service currently serving <span class="text-[#3b82f6] font-bold">Brooklyn, Queens, and Manhattan</span>. We bring all equipment to you.</p>
                 </div>
                 <div class="border-b border-slate-100 pb-8">
-                    <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">Is there a warranty?</h3>
-                    <p class="text-slate-500 font-medium leading-relaxed">Every job is backed by the <span class="text-slate-900 font-bold">LensLift 18-Month Guarantee</span>. If your lenses haze within 18 months, we re-coat them for free.</p>
-                </div>
-                <div class="border-b border-slate-100 pb-8">
-                    <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">What payment methods do you accept?</h3>
-                    <p class="text-slate-500 font-medium leading-relaxed uppercase tracking-wide">We accept <span class="text-slate-900 font-bold">Cash, Zelle, or Venmo</span> upon completion of the service.</p>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">What payment do you accept?</h3>
+                    <p class="text-slate-500 font-medium leading-relaxed uppercase tracking-widest">We strictly accept <span class="text-slate-900 font-bold">Cash, Zelle, or Venmo</span> upon completion of the work.</p>
                 </div>
             </div>
         </div>
@@ -187,44 +212,44 @@
 
     <section id="book" class="py-24 px-4 bg-slate-50">
         <div class="max-w-4xl mx-auto bg-white rounded-[3rem] p-10 md:p-16 border border-slate-200 shadow-2xl">
-            <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-6 text-left">
                 <div>
                     <h2 class="text-4xl font-extrabold mb-2 text-slate-900 uppercase tracking-tighter">Book Your Service</h2>
-                    <p class="text-slate-500 font-bold italic">Brooklyn • Queens • Manhattan</p>
+                    <p class="text-slate-500 font-bold italic uppercase tracking-widest text-xs">Brooklyn • Queens • Manhattan</p>
                 </div>
-                <a href="tel:9177578262" class="bg-blue-500 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-lg">📱 917-757-8262</a>
+                <a href="tel:9177578262" class="bg-[#3b82f6] text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-lg">📱 917-757-8262</a>
             </div>
 
             <div class="mb-10 p-6 bg-blue-50 border border-blue-100 rounded-2xl flex items-start gap-4 text-left">
                 <div class="text-3xl">📸</div>
                 <div>
                     <p class="font-extrabold text-blue-900 mb-1 text-lg">Text a photo for an exact quote.</p>
-                    <p class="text-blue-800 font-medium text-sm">Send a clear image of your headlights to <a href="tel:9177578262" class="font-bold underline">917-757-8262</a> to confirm your tier before booking.</p>
+                    <p class="text-blue-800 font-medium text-sm">Send a clear image of your headlights to <a href="tel:9177578262" class="font-bold underline">917-757-8262</a> before filling out this form.</p>
                 </div>
             </div>
             
-            <form action="https://formspree.io/f/xlgogvpv" method="POST" class="space-y-6">
+            <form action="https://formspree.io/f/xlgogvpv" method="POST" class="space-y-6 text-left">
                 <div class="grid md:grid-cols-2 gap-6">
                     <input type="text" name="name" placeholder="Full Name" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none font-bold">
                     <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none font-bold">
                 </div>
                 <input type="text" name="vehicle" placeholder="Vehicle Year, Make, & Model" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none font-bold">
                 <textarea name="message" placeholder="Location and Preferred Time..." rows="3" class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none font-bold"></textarea>
-                <button type="submit" class="w-full bg-slate-900 text-white font-extrabold py-5 rounded-2xl text-xl hover:bg-blue-500 transition shadow-xl uppercase tracking-widest">Confirm Booking Request</button>
+                <button type="submit" class="w-full bg-slate-900 text-white font-extrabold py-5 rounded-2xl text-xl hover:bg-[#3b82f6] transition shadow-xl uppercase tracking-widest">Confirm Booking Request</button>
             </form>
         </div>
     </section>
 
     <footer class="bg-slate-900 text-slate-500 py-20 text-center px-4">
         <img src="lenslift2 (2).png" alt="LensLift" class="h-16 w-auto mx-auto mb-6">
-        <p class="text-blue-500 font-extrabold text-3xl tracking-tighter mb-2 uppercase">LensLift Mobile</p>
+        <p class="text-[#3b82f6] font-extrabold text-3xl tracking-tighter mb-2 uppercase">LensLift Mobile</p>
         <p class="mb-8 text-slate-400 font-bold uppercase text-xs tracking-widest">Brooklyn | Queens | Manhattan</p>
         <p class="mb-12 text-slate-500 font-bold italic">917-757-8262 | lensliftmobile@gmail.com</p>
         <div class="flex justify-center space-x-8 text-white font-bold text-[10px] uppercase tracking-[0.3em]">
-            <a href="#method" class="hover:text-blue-500 transition">Method</a>
-            <a href="#gallery" class="hover:text-white transition">Gallery</a>
-            <a href="#pricing" class="hover:text-white transition">Pricing</a>
-            <a href="#faq" class="hover:text-white transition">FAQ</a>
+            <a href="#method" class="hover:text-[#3b82f6] transition">Method</a>
+            <a href="#gallery" class="hover:text-[#3b82f6] transition">Gallery</a>
+            <a href="#pricing" class="hover:text-[#3b82f6] transition">Pricing</a>
+            <a href="#faq" class="hover:text-[#3b82f6] transition">FAQ</a>
         </div>
     </footer>
 
