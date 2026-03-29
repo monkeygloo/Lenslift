@@ -32,9 +32,9 @@
             display: inline-block;
         }
 
-        /* Progress Bar Animation */
+        /* Progress Bar Logic - Set to 10% for 2/20 jobs */
         .progress-fill {
-            width: 60%; /* Manual control for the Architect to update as jobs are finished */
+            width: 10%; 
             background: #3b82f6;
             height: 100%;
             border-radius: 9999px;
@@ -47,7 +47,13 @@
     <nav class="fixed w-full z-50 header-white py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col items-center">
-                <span class="font-extrabold text-6xl tracking-tighter text-[#3b82f6] uppercase mb-4">LensLift</span>
+                
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="font-extrabold text-6xl tracking-tighter text-[#3b82f6] uppercase">LensLift</span>
+                    <div class="bg-blue-600 text-white px-3 py-1 rounded-md font-black text-[10px] uppercase tracking-tighter shadow-sm mt-2">
+                        Launch Special
+                    </div>
+                </div>
                 
                 <div class="grid grid-cols-3 w-full items-center">
                     <div></div> <div class="flex justify-center space-x-8">
@@ -109,21 +115,21 @@
         <div class="max-w-7xl mx-auto">
             <h2 class="text-4xl font-extrabold text-center mb-16 uppercase tracking-tighter">Why Restore Instead of Replace?</h2>
             <div class="grid md:grid-cols-3 gap-12">
-                <div class="flex gap-6 items-start">
+                <div class="flex gap-6 items-start text-left">
                     <div class="bg-[#3b82f6] text-white p-4 rounded-2xl text-2xl font-bold">01</div>
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400 uppercase">Night Visibility</h3>
                         <p class="text-slate-400 leading-relaxed">Oxidized lenses block light output. Our process increases visibility by up to <span class="text-white font-bold">200%</span>, making night driving significantly safer.</p>
                     </div>
                 </div>
-                <div class="flex gap-6 items-start">
+                <div class="flex gap-6 items-start text-left">
                     <div class="bg-[#3b82f6] text-white p-4 rounded-2xl text-2xl font-bold">02</div>
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400 uppercase">Resale Value</h3>
                         <p class="text-slate-400 leading-relaxed">Cloudy headlights age your car instantly. Clear lenses can add <span class="text-white font-bold">hundreds of dollars</span> to your private party resale value.</p>
                     </div>
                 </div>
-                <div class="flex gap-6 items-start">
+                <div class="flex gap-6 items-start text-left">
                     <div class="bg-[#3b82f6] text-white p-4 rounded-2xl text-2xl font-bold">03</div>
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400 uppercase">Massive Savings</h3>
@@ -159,8 +165,8 @@
             
             <div class="max-w-md mx-auto mb-12 bg-slate-100 p-8 rounded-3xl border border-slate-200">
                 <div class="flex justify-between items-center mb-3">
-                    <span class="text-slate-900 font-black uppercase text-xs tracking-widest">Founder's Special Progress</span>
-                    <span class="text-[#3b82f6] font-black">12/20 Spots Claimed</span>
+                    <span class="text-slate-900 font-black uppercase text-xs tracking-widest text-left">Founder's Special Progress</span>
+                    <span class="text-[#3b82f6] font-black">2/20 Spots Claimed</span>
                 </div>
                 <div class="w-full bg-slate-200 h-4 rounded-full overflow-hidden">
                     <div class="progress-fill"></div>
@@ -194,15 +200,15 @@
         <div class="max-w-4xl mx-auto">
             <h2 class="text-4xl font-extrabold text-center mb-16 uppercase tracking-tighter text-slate-900">Frequently Asked Questions</h2>
             <div class="space-y-8">
-                <div class="border-b border-slate-100 pb-8">
+                <div class="border-b border-slate-100 pb-8 text-left">
                     <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">How long does it take?</h3>
                     <p class="text-slate-500 font-medium leading-relaxed">A full restoration typically takes between <span class="text-slate-900 font-bold">45 to 90 minutes</span> depending on oxidation levels.</p>
                 </div>
-                <div class="border-b border-slate-100 pb-8">
+                <div class="border-b border-slate-100 pb-8 text-left">
                     <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">Do you come to me?</h3>
                     <p class="text-slate-500 font-medium leading-relaxed">Yes! Mobile service currently serving <span class="text-[#3b82f6] font-bold">Brooklyn, Queens, and Manhattan</span>. We bring all equipment to you.</p>
                 </div>
-                <div class="border-b border-slate-100 pb-8">
+                <div class="border-b border-slate-100 pb-8 text-left">
                     <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">What payment do you accept?</h3>
                     <p class="text-slate-500 font-medium leading-relaxed uppercase tracking-widest">We strictly accept <span class="text-slate-900 font-bold">Cash, Zelle, or Venmo</span> upon completion of the work.</p>
                 </div>
