@@ -8,16 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        
         .hero-mesh {
             background-color: #0f172a;
             background-image: radial-gradient(at 0% 0%, hsla(217,100%,13%,1) 0, transparent 50%), 
                               radial-gradient(at 100% 0%, hsla(217,100%,13%,1) 0, transparent 50%);
         }
-        
         .header-white { background-color: #ffffff; border-bottom: 1px solid #e2e8f0; }
 
-        /* Heartbeat Animation (Now Hero Only) */
         @keyframes heartbeat {
             0% { transform: scale(1); }
             14% { transform: scale(1.05); }
@@ -25,27 +22,13 @@
             42% { transform: scale(1.05); }
             70% { transform: scale(1); }
         }
-
         .pulse-button {
             animation: heartbeat 1.5s ease-in-out infinite;
             display: inline-block;
         }
 
-        /* Progress Bar Logic - Set to 10% for 2/20 jobs */
-        .progress-fill {
-            width: 10%; 
-            background: #3b82f6;
-            height: 100%;
-            border-radius: 9999px;
-            transition: width 1s ease-in-out;
-        }
-
-        /* Gold Pop Badge */
-        .gold-pop {
-            background: #fbbf24; /* High-visibility Gold */
-            color: #0f172a;
-            box-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
-        }
+        .progress-fill { width: 10%; background: #3b82f6; height: 100%; border-radius: 9999px; transition: width 1s; }
+        .gold-pop { background: #fbbf24; color: #0f172a; box-shadow: 0 0 15px rgba(251, 191, 36, 0.3); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -53,16 +36,15 @@
     <nav class="fixed w-full z-50 header-white py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col items-center">
-                
                 <div class="flex items-center gap-4 mb-4">
                     <span class="font-extrabold text-6xl tracking-tighter text-[#3b82f6] uppercase">LensLift</span>
                     <div class="gold-pop px-3 py-1 rounded-md font-black text-[10px] uppercase tracking-tighter shadow-sm mt-2">
                         Introductory Rate
                     </div>
                 </div>
-                
                 <div class="grid grid-cols-3 w-full items-center">
-                    <div></div> <div class="flex justify-center space-x-8">
+                    <div></div>
+                    <div class="flex justify-center space-x-8">
                         <a href="#method" class="font-bold text-xs text-slate-600 hover:text-[#3b82f6] transition uppercase tracking-widest">Method</a>
                         <a href="#gallery" class="font-bold text-xs text-slate-600 hover:text-[#3b82f6] transition uppercase tracking-widest">Gallery</a>
                         <a href="#pricing" class="font-bold text-xs text-slate-600 hover:text-[#3b82f6] transition uppercase tracking-widest">Pricing</a>
@@ -177,7 +159,7 @@
                 <div class="w-full bg-slate-200 h-4 rounded-full overflow-hidden">
                     <div class="progress-fill"></div>
                 </div>
-                <p class="mt-4 text-slate-500 text-[10px] font-bold uppercase tracking-widest">Limited Time Only — Standard rates return after 20 bookings</p>
+                <p class="mt-4 text-slate-500 text-[10px] font-bold uppercase tracking-widest">Standard rates return after 20 bookings</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -185,38 +167,37 @@
                     <div class="absolute top-0 right-0 gold-pop font-bold text-[10px] px-4 py-1 uppercase tracking-tighter">Founder's Rate</div>
                     <h3 class="text-2xl font-bold mb-4 text-slate-900">Standard Restore</h3>
                     <div class="text-5xl font-extrabold mb-6 text-[#3b82f6]">$40 <span class="text-sm text-slate-400 font-normal">/ pair</span></div>
-                    <p class="text-slate-600 font-medium leading-relaxed">Full restoration of both headlights with ceramic coating. Perfect for standard yellowing.</p>
+                    <p class="text-slate-600 font-medium leading-relaxed">Full restoration of both headlights with ceramic coating.</p>
                 </div>
                 <div class="p-10 rounded-[2.5rem] bg-slate-900 text-white text-left relative overflow-hidden border-2 border-[#3b82f6]">
                     <div class="absolute top-0 right-0 gold-pop font-bold text-[10px] px-4 py-1 uppercase tracking-tighter">Founder's Rate</div>
                     <h3 class="text-2xl font-bold mb-4 text-[#3b82f6]">Deep Restoration</h3>
                     <div class="text-5xl font-extrabold mb-6 text-[#3b82f6]">$50 – $80 <span class="text-sm text-slate-500 font-normal">/ pair</span></div>
-                    <p class="text-slate-400 font-medium leading-relaxed">Heavy oxidation removal requiring extra sanding stages. Restores severely crusty lenses.</p>
+                    <p class="text-slate-400 font-medium leading-relaxed">Heavy oxidation removal requiring extra sanding stages.</p>
                 </div>
             </div>
             
-            <div class="mt-12 inline-flex items-center gap-3 bg-slate-900 text-white px-6 py-3 rounded-full font-bold shadow-lg">
-                <span class="text-[#3b82f6] text-xl">🏆</span>
-                <span>Includes LensLift 18-Month Guarantee</span>
-            </div>
+            <p class="mt-12 text-slate-400 font-bold uppercase tracking-[0.2em] text-[10px]">
+                *Mobile travel surcharge may apply for locations 10+ miles away or requiring toll bridge crossings.
+            </p>
         </div>
     </section>
 
-    <section id="faq" class="py-24 px-4 bg-white text-left">
+    <section id="faq" class="py-24 px-4 bg-white text-left border-t border-slate-50">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-4xl font-extrabold text-center mb-16 uppercase tracking-tighter text-slate-900">Frequently Asked Questions</h2>
             <div class="space-y-8">
                 <div class="border-b border-slate-100 pb-8">
                     <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">How long does it take?</h3>
-                    <p class="text-slate-500 font-medium leading-relaxed">A full restoration typically takes between <span class="text-slate-900 font-bold">45 to 90 minutes</span> depending on oxidation levels.</p>
+                    <p class="text-slate-500 font-medium leading-relaxed">Between <span class="text-slate-900 font-bold">45 to 90 minutes</span> depending on oxidation levels.</p>
                 </div>
                 <div class="border-b border-slate-100 pb-8">
-                    <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">Do you come to me?</h3>
-                    <p class="text-slate-500 font-medium leading-relaxed">Yes! Mobile service currently serving <span class="text-[#3b82f6] font-bold">Brooklyn, Queens, and Manhattan</span>. We bring all equipment to you.</p>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">Is there a travel fee?</h3>
+                    <p class="text-slate-500 font-medium leading-relaxed">Base pricing includes travel to most parts of <span class="text-[#3b82f6] font-bold">Brooklyn, Queens, and Manhattan</span>. A mobile surcharge ($15–$25) applies for locations 10+ miles away or those requiring toll bridge/tunnel crossings.</p>
                 </div>
                 <div class="border-b border-slate-100 pb-8">
                     <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">What payment do you accept?</h3>
-                    <p class="text-slate-500 font-medium leading-relaxed uppercase tracking-widest">We strictly accept <span class="text-slate-900 font-bold">Cash, Zelle, or Venmo</span> upon completion of the work.</p>
+                    <p class="text-slate-500 font-medium leading-relaxed uppercase tracking-widest">We strictly accept <span class="text-slate-900 font-bold">Cash, Zelle, or Venmo</span> upon completion.</p>
                 </div>
             </div>
         </div>
@@ -236,7 +217,7 @@
                 <div class="text-3xl">📸</div>
                 <div>
                     <p class="font-extrabold text-blue-900 mb-1 text-lg">Text a photo for an exact quote.</p>
-                    <p class="text-blue-800 font-medium text-sm">Send a clear image of your headlights to <a href="tel:9177578262" class="font-bold underline">917-757-8262</a> before filling out this form.</p>
+                    <p class="text-blue-800 font-medium text-sm">Send a clear image of your headlights to <a href="tel:9177578262" class="font-bold underline">917-757-8262</a>. **Please include your location** so we can calculate travel/tolls correctly.</p>
                 </div>
             </div>
             
@@ -256,7 +237,6 @@
         <img src="lenslift2 (2).png" alt="LensLift" class="h-16 w-auto mx-auto mb-6">
         <p class="text-[#3b82f6] font-extrabold text-3xl tracking-tighter mb-2 uppercase">LensLift Mobile</p>
         <p class="mb-8 text-slate-400 font-bold uppercase text-xs tracking-widest">Brooklyn | Queens | Manhattan</p>
-        <p class="mb-12 text-slate-500 font-bold italic">917-757-8262 | lensliftmobile@gmail.com</p>
         <div class="flex justify-center space-x-8 text-white font-bold text-[10px] uppercase tracking-[0.3em]">
             <a href="#method" class="hover:text-[#3b82f6] transition">Method</a>
             <a href="#gallery" class="hover:text-[#3b82f6] transition">Gallery</a>
