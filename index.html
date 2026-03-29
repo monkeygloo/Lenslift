@@ -3,65 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LensLift | Headlight Restoration</title>
+    <title>LensLift | NYC Professional Headlight Restoration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        /* Logic for the FAQ Accordion functionality */
-        .faq-item { border-bottom: 1px solid #ccc; padding: 10px 0; }
-        .faq-question { cursor: pointer; font-weight: bold; display: flex; justify-content: space-between; }
-        .faq-answer { display: none; padding-top: 10px; }
-        .faq-item.active .faq-answer { display: block; }
-        
-        .value-stack { display: grid; grid-template-columns: repeat(auto-fit, min-minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
-        .value-card { padding: 15px; background: #f9f9f9; border-radius: 8px; text-align: center; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .hero-mesh {
+            background-color: #0f172a;
+            background-image: radial-gradient(at 0% 0%, hsla(217,100%,13%,1) 0, transparent 50%), 
+                              radial-gradient(at 100% 0%, hsla(217,100%,13%,1) 0, transparent 50%);
+        }
+        .header-white { background-color: #ffffff; border-bottom: 1px solid #e2e8f0; }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.05); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.05); }
+            70% { transform: scale(1); }
+        }
+        .pulse-button {
+            animation: heartbeat 1.5s ease-in-out infinite;
+            display: inline-block;
+        }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-900">
 
-    <section id="header-pricing">
-        <h1>LensLift Professional Restoration</h1>
-        <div class="pricing-display">
-            <h2>Standard Restoration: $40 - $80</h2>
-            <p>Includes Industrial Ceramic Armor Coating</p>
+    <nav class="fixed w-full z-50 header-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center">
+                
+                <span class="font-extrabold text-6xl tracking-tighter text-blue-500 uppercase mb-4">LensLift</span>
+                
+                <div class="grid grid-cols-3 w-full items-center">
+                    <div></div> <div class="flex justify-center space-x-10">
+                        <a href="#method" class="font-bold text-sm text-slate-600 hover:text-blue-600 transition uppercase tracking-widest">The Method</a>
+                        <a href="#gallery" class="font-bold text-sm text-slate-600 hover:text-blue-600 transition uppercase tracking-widest">Past Jobs</a>
+                        <a href="#pricing" class="font-bold text-sm text-slate-600 hover:text-blue-600 transition uppercase tracking-widest">Pricing</a>
+                    </div>
+                    <div class="flex justify-end">
+                        <a href="#book" class="pulse-button bg-slate-900 text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-blue-600 transition shadow-lg uppercase tracking-widest">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-mesh text-white pt-72 pb-32 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="inline-block px-5 py-2 mb-8 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 font-bold text-sm tracking-widest uppercase">
+                🌎 Se Habla Español
+            </div>
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter leading-none uppercase">
+                See Clearly. <br> <span class="text-blue-500">Drive Safely.</span>
+            </h1>
+            <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Professional mobile headlight restoration across NYC. Industrial-grade clarity. We come to you.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#book" class="pulse-button bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-500 hover:text-white transition">Book Appointment</a>
+                <a href="tel:9177578262" class="border border-slate-700 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-800 transition">Call 917-757-8262</a>
+            </div>
         </div>
     </section>
 
-    <section id="why-restoration" class="value-stack">
-        <div class="value-card">
-            <h3>🌙 Night Safety</h3>
-            <p>Increase light output by up to 200%. Don't drive blind; see hazards sooner.</p>
-        </div>
-        <div class="value-card">
-            <h3>💰 Save Hundreds</h3>
-            <p>Replacement assemblies cost $300+. Restore them for a fraction of the price.</p>
-        </div>
-        <div class="value-card">
-            <h3>📈 Resale Value</h3>
-            <p>Clear lenses significantly improve "curb appeal" and private party car value.</p>
-        </div>
-    </section>
-
-    <section id="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFAQ(this)">How long does the process take? <span>+</span></div>
-            <div class="faq-answer">Most restorations are completed in 45–90 minutes depending on the level of oxidation.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFAQ(this)">What is the 18-Month Guarantee? <span>+</span></div>
-            <div class="faq-answer">If your lenses show signs of yellowing or hazing within 18 months, we will re-treat them for free.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFAQ(this)">Do you come to my location? <span>+</span></div>
-            <div class="faq-answer">Yes! LensLift is a fully mobile service. We perform the restoration at your home or office.</div>
+    <section id="method" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-center mb-16 uppercase tracking-tighter text-slate-900">The LensLift Method</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-10 rounded-[2.5rem] border border-gray-100 bg-gray-50">
+                    <div class="text-5xl mb-6 text-blue-500">🌀</div>
+                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">1. Precision Surface Prep</h3>
+                    <p class="text-gray-600">Multi-stage machine wet sanding to surgically remove the oxidized, yellow layer and reveal fresh plastic.</p>
+                </div>
+                <div class="p-10 rounded-[2.5rem] border border-gray-100 bg-gray-50">
+                    <div class="text-5xl mb-6 text-blue-500">✨</div>
+                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">2. Clarity Restoration</h3>
+                    <p class="text-gray-600">Advanced refining and polishing to restore full transparency and optical performance to your lenses.</p>
+                </div>
+                <div class="p-10 rounded-[2.5rem] border border-gray-100 bg-gray-50">
+                    <div class="text-5xl mb-6 text-blue-500">🛡️</div>
+                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">3. Industrial Ceramic Armor</h3>
+                    <p class="text-gray-600">Application of a professional UV ceramic coating to lock in the clarity and protect against future weathering.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <script>
-        function toggleFAQ(element) {
-            element.parentElement.classList.toggle('active');
-            const span = element.querySelector('span');
-            span.textContent = element.parentElement.classList.contains('active') ? '-' : '+';
-        }
-    </script>
+    <section id="gallery" class="py-24 px-4 bg-slate-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-4 uppercase tracking-tighter text-slate-900">Past Jobs</h2>
+            <p class="text-slate-500 font-bold mb-16 uppercase text-sm tracking-widest italic">Professional Results, Every Time</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="overflow-hidden rounded-[2.5rem] shadow-xl bg-white aspect-video border-4 border-white">
+                    <img src="lenslift2 (2).png" alt="Showcase" class="w-full h-full object-contain opacity-50 hover:opacity-100 transition">
+                </div>
+                <div class="overflow-hidden rounded-[2.5rem] shadow-xl bg-white aspect-video border-4 border-white">
+                    <img src="lenslift2 (2).png" alt="Showcase" class="w-full h-full object-contain opacity-50 hover:opacity-100 transition">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            
+            <div class="flex justify-center mb-8">
+                <img src="lenslift2 (2).png" alt="LensLift Logo" class="h-32 w-auto">
+            </div>
+            
+            <h2 class="text-4xl font-extrabold mb-4 uppercase tracking-tighter text-slate-900">Service Tiers</h2>
+            <div class="inline-flex items-center justify-center gap-3 bg-slate-900 text-white px-6 py-3 rounded-full font-bold mb-8 shadow-lg">
+                <span class="text-blue-500 text-xl">🏆</span>
+                <span>The LensLift 18-Month Guarantee</span>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="p-10 rounded-[2.5rem] bg-slate-50 border border-slate-200 text-left">
+                    <h3 class="text-2xl font-bold mb-4 text-slate-900">Standard Restore</h3>
+                    <div class="text-5xl font-extrabold mb-6 text-blue-500">$40 <span class="text-sm text-slate-400 font-normal">/ pair</span></div>
+                    <p class="text-slate-600 font-medium">Restoration of standard haze and yellowing for both headlights.</p>
+                </div>
+                <div class="p-10 rounded-[2.5rem] bg-slate-900 text-white text-left">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-500">Deep Restoration</h3>
+                    <div class="text-5xl font-extrabold mb-6 text-blue-500">$50 – $80 <span class="text-sm text-slate-500 font-normal">/ pair</span></div>
+                    <p class="text-slate-400 font-medium">For heavily weathered lenses requiring extended stage sanding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="py-24 px-4 bg-slate-50">
+        <div class="max-w-4xl mx-auto bg-white rounded-[3rem] p-10 md:p-16 border border-slate-200 shadow-2xl">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-6">
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-2 text-slate-900 uppercase tracking-tighter">Book Your Service</h2>
+                    <p class="text-slate-500 font-bold">Mobile service across NYC.</p>
+                </div>
+                <a href="tel:9177578262" class="bg-blue-500 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-lg">📱 917-757-8262</a>
+            </div>
+
+            <div class="mb-10 p-6 bg-blue-50 border border-blue-100 rounded-2xl flex items-start gap-4">
+                <div class="text-3xl">📸</div>
+                <div>
+                    <p class="font-extrabold text-blue-900 mb-1">Text a photo for an exact quote.</p>
+                    <p class="text-blue-800 font-medium text-sm">Send a clear image of your headlights to <a href="tel:9177578262" class="font-bold underline">917-757-8262</a> to confirm your tier before booking.</p>
+                </div>
+            </div>
+            
+            <form action="https://formspree.io/f/xlgogvpv" method="POST" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" name="name" placeholder="Full Name" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none font-bold">
+                    <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none font-bold">
+                </div>
+                <input type="text" name="vehicle" placeholder="Vehicle (Year/Make/Model)" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none font-bold">
+                <textarea name="message" placeholder="Location and Time..." rows="3" class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-blue-500 outline-none font-bold"></textarea>
+                <button type="submit" class="w-full bg-slate-900 text-white font-extrabold py-5 rounded-2xl text-xl hover:bg-blue-500 transition shadow-xl">Confirm Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-500 py-20 text-center px-4">
+        <img src="lenslift2 (2).png" alt="LensLift" class="h-16 w-auto mx-auto mb-6">
+        <p class="text-blue-500 font-extrabold text-3xl tracking-tighter mb-2 uppercase">LensLift Mobile</p>
+        <p class="mb-8 text-slate-400 font-bold">917-757-8262 | lensliftmobile@gmail.com</p>
+        <div class="flex justify-center space-x-8 text-white font-bold text-xs uppercase tracking-widest">
+            <a href="#method" class="hover:text-blue-500 transition">The Method</a>
+            <a href="#gallery" class="hover:text-blue-500 transition">Gallery</a>
+            <a href="#pricing" class="hover:text-blue-500 transition">Pricing</a>
+        </div>
+    </footer>
+
 </body>
 </html>
