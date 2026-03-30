@@ -15,7 +15,6 @@
         }
         .header-white { background-color: #ffffff; border-bottom: 1px solid #e2e8f0; }
 
-        /* Heartbeat Animation - Hero Button Only */
         @keyframes heartbeat {
             0% { transform: scale(1); }
             14% { transform: scale(1.05); }
@@ -28,15 +27,8 @@
             display: inline-block;
         }
 
-        /* 2/20 Jobs Progress (10%) */
         .progress-fill { width: 10%; background: #3b82f6; height: 100%; border-radius: 9999px; transition: width 1s; }
-        
-        /* Gold Pop Badge */
-        .gold-pop { 
-            background: #fbbf24; 
-            color: #0f172a; 
-            box-shadow: 0 0 15px rgba(251, 191, 36, 0.3); 
-        }
+        .gold-pop { background: #fbbf24; color: #0f172a; box-shadow: 0 0 15px rgba(251, 191, 36, 0.3); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -44,14 +36,12 @@
     <nav class="fixed w-full z-50 header-white py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col items-center">
-                
                 <div class="flex items-center gap-4 mb-4">
                     <span class="font-extrabold text-6xl tracking-tighter text-[#3b82f6] uppercase">LensLift</span>
                     <div class="gold-pop px-3 py-1 rounded-md font-black text-[10px] uppercase tracking-tighter shadow-sm mt-2">
                         Introductory Rate
                     </div>
                 </div>
-                
                 <div class="grid grid-cols-3 w-full items-center">
                     <div></div>
                     <div class="flex justify-center space-x-8">
@@ -109,35 +99,6 @@
         </div>
     </section>
 
-    <section class="py-24 px-4 bg-slate-900 text-white overflow-hidden relative">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl font-extrabold text-center mb-16 uppercase tracking-tighter">Why Restore Instead of Replace?</h2>
-            <div class="grid md:grid-cols-3 gap-12 text-left">
-                <div class="flex gap-6 items-start">
-                    <div class="bg-[#3b82f6] text-white p-4 rounded-2xl text-2xl font-bold">01</div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2 text-blue-400 uppercase">Night Visibility</h3>
-                        <p class="text-slate-400 leading-relaxed">Oxidized lenses block light output. Our process increases visibility by up to <span class="text-white font-bold">200%</span>, making night driving safer.</p>
-                    </div>
-                </div>
-                <div class="flex gap-6 items-start">
-                    <div class="bg-[#3b82f6] text-white p-4 rounded-2xl text-2xl font-bold">02</div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2 text-blue-400 uppercase">Resale Value</h3>
-                        <p class="text-slate-400 leading-relaxed">Clear lenses can add <span class="text-white font-bold">hundreds of dollars</span> to your private party resale value instantly.</p>
-                    </div>
-                </div>
-                <div class="flex gap-6 items-start">
-                    <div class="bg-[#3b82f6] text-white p-4 rounded-2xl text-2xl font-bold">03</div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2 text-blue-400 uppercase">Massive Savings</h3>
-                        <p class="text-slate-400 leading-relaxed">New assemblies cost <span class="text-white font-bold">$300–$1,000+</span>. Get the same look for a fraction of the cost.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="gallery" class="py-24 px-4 bg-slate-100">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-4xl font-extrabold mb-4 uppercase tracking-tighter text-slate-900">Past Jobs</h2>
@@ -172,7 +133,7 @@
                 <p class="mt-4 text-slate-500 text-[10px] font-bold uppercase tracking-widest">Standard rates return after 20 bookings</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
                 <div class="p-10 rounded-[2.5rem] bg-slate-50 border-2 border-slate-100 text-left relative overflow-hidden">
                     <div class="absolute top-0 right-0 gold-pop font-bold text-[10px] px-4 py-1 uppercase tracking-tighter">Founder's Rate</div>
                     <h3 class="text-2xl font-bold mb-4 text-slate-900">Standard Restore</h3>
@@ -186,8 +147,19 @@
                     <p class="text-slate-400 font-medium leading-relaxed">For heavily weathered lenses requiring extra sanding and refinement. Includes **Professional High-Index UV Sealants**.</p>
                 </div>
             </div>
+
+            <div class="max-w-4xl mx-auto bg-blue-50 border border-blue-100 rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 text-left mb-12">
+                <div class="bg-[#3b82f6] text-white p-4 rounded-2xl text-2xl">🚐</div>
+                <div>
+                    <h4 class="text-blue-900 font-black uppercase text-sm tracking-widest mb-1">Oversized Vehicle Notice</h4>
+                    <p class="text-blue-800 text-sm leading-relaxed font-medium">
+                        Standard rates apply to Sedans and Coupes. <span class="font-bold">Full-size SUVs, Trucks, and Minivans</span> are subject to a small material surcharge due to larger headlight surface areas. 
+                        <span class="block mt-2 font-black">Please send a photo for an accurate, non-confusing quote.</span>
+                    </p>
+                </div>
+            </div>
             
-            <p class="mt-12 text-slate-900 font-black uppercase tracking-[0.1em] text-[11px] bg-yellow-50 inline-block px-4 py-2 rounded-lg border border-yellow-200 shadow-sm">
+            <p class="text-slate-900 font-black uppercase tracking-[0.1em] text-[11px] bg-yellow-50 inline-block px-4 py-2 rounded-lg border border-yellow-200 shadow-sm">
                 ** Mobile travel surcharge may apply for locations 7+ miles away or requiring toll bridge crossings. **
             </p>
         </div>
@@ -206,10 +178,6 @@
                     <p class="text-slate-500 font-medium leading-relaxed">
                         Base pricing covers travel within 7 miles. <span class="text-slate-900 font-black">A mobile surcharge ($15–$25) applies for locations 7+ miles away or those requiring toll bridge/tunnel crossings.</span>
                     </p>
-                </div>
-                <div class="border-b border-slate-100 pb-8">
-                    <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">How long does it take?</h3>
-                    <p class="text-slate-500 font-medium leading-relaxed">A restoration typically takes between <span class="text-slate-900 font-bold">45 to 90 minutes</span> depending on oxidation levels.</p>
                 </div>
                 <div class="border-b border-slate-100 pb-8">
                     <h3 class="text-xl font-bold mb-3 text-slate-900 uppercase tracking-tight">What payment do you accept?</h3>
@@ -235,7 +203,7 @@
                     <p class="font-extrabold text-blue-900 mb-1 text-lg italic">Text a photo for an exact quote.</p>
                     <p class="text-blue-800 font-medium text-sm leading-relaxed">
                         Send a clear image of your headlights to <a href="tel:9177578262" class="font-bold underline">917-757-8262</a>. 
-                        <span class="block mt-2 text-blue-900 font-black">** Please include your cross-streets or zip code for accurate travel and toll calculation. **</span>
+                        <span class="block mt-2 text-blue-900 font-black">** Please include your Year, Make, Model, and Zip Code for an accurate quote. **</span>
                     </p>
                 </div>
             </div>
