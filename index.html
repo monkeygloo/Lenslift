@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,8 +27,7 @@
             display: inline-block;
         }
 
-        /* Set to 30% to represent 6 out of 20 spots claimed */
-        .progress-fill { width: 30%; background: #3b82f6; height: 100%; border-radius: 9999px; transition: width 1s; }
+        .progress-fill { background: #3b82f6; height: 100%; border-radius: 9999px; transition: width 1s; }
         .gold-pop { background: #fbbf24; color: #0f172a; box-shadow: 0 0 15px rgba(251, 191, 36, 0.3); }
     </style>
 </head>
@@ -132,15 +131,15 @@
             <div class="max-w-md mx-auto mb-12 bg-slate-100 p-8 rounded-3xl border border-slate-200">
                 <div class="flex justify-between items-center mb-3">
                     <span class="text-slate-900 font-black uppercase text-xs tracking-widest text-left">Founder's Special Progress</span>
-                    <span class="text-[#3b82f6] font-black">6/20 Spots Claimed</span>
+                    <span class="text-[#3b82f6] font-black">9/20 Spots Claimed</span>
                 </div>
                 <div class="w-full bg-slate-200 h-4 rounded-full overflow-hidden">
-                    <div class="progress-fill" style="width: 30%;"></div>
+                    <div class="progress-fill" style="width: 45%;"></div>
                 </div>
                 <p class="mt-4 text-slate-500 text-[10px] font-bold uppercase tracking-widest italic text-center">Standard rates return after 20 bookings</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12 text-left">
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12 text-left">
                 <div class="p-10 rounded-[2.5rem] bg-slate-50 border-2 border-slate-100 relative overflow-hidden">
                     <div class="absolute top-0 right-0 gold-pop font-bold text-[10px] px-4 py-1 uppercase tracking-tighter">Founder's Rate</div>
                     <h3 class="text-2xl font-bold mb-4 text-slate-900 uppercase">Standard Restore</h3>
@@ -152,6 +151,12 @@
                     <h3 class="text-2xl font-bold mb-4 text-[#3b82f6] uppercase">Deep Restoration</h3>
                     <div class="text-5xl font-extrabold mb-6 text-[#3b82f6]">$50 – $80 <span class="text-sm text-slate-500 font-normal">/ pair</span></div>
                     <p class="text-slate-400 font-medium leading-relaxed italic">For heavy weathering/pitting. Advanced multi-stage refinement.</p>
+                </div>
+                <div class="p-10 rounded-[2.5rem] bg-slate-900 text-white relative overflow-hidden border-2 border-[#fbbf24]">
+                    <div class="absolute top-0 right-0 gold-pop font-bold text-[10px] px-4 py-1 uppercase tracking-tighter">Ultimate Protection</div>
+                    <h3 class="text-2xl font-bold mb-4 text-[#fbbf24] uppercase">Factory UV Seal</h3>
+                    <div class="text-5xl font-extrabold mb-6 text-[#fbbf24]">$100 <span class="text-sm text-slate-500 font-normal">/ pair</span></div>
+                    <p class="text-slate-400 font-medium leading-relaxed italic">The absolute best industrial-grade UV resin available on the market. Instantly cross-linked on-site for a rock-hard, factory-level shell delivering 3–5 years of guaranteed protection.</p>
                 </div>
             </div>
 
